@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.1",
-    "eris": "^0.17.0"
+    "eris": "^0.17.0",
+    "fs": "^0.0.1-security",
+    "reddit-fetch": "^1.5.1"
   }
 }
