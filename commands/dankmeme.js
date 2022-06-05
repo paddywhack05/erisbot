@@ -1,13 +1,13 @@
 
 const redditFetch = require('reddit-fetch/src/redditFetch');
 module.exports= {
-name: "meme",
-description:"meme command",
+name: "dankmeme",
+description:"dankmeme command",
 async execute(message,client){
     fetch();
     async function fetch(){
     redditFetch({
-        subreddit:'memes',
+        subreddit:'dankmeme',
         sort: 'top',
         allowNSFW: false,
     allowCrossPost: true,

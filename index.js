@@ -24,10 +24,19 @@ client.on("error", (err) => {
   })
   client.on("messageCreate", async (message) => {
     if(message.content.toLowerCase() === "!ping") { 
-        client.commands.get('ping').execute(client,message)
+        client.commands.get('ping').execute(message,client)
     }
     else if(message.content.toLowerCase()==="!meme"){
-        client.commands.get('meme').execute(client,message)
+        client.commands.get('meme').execute(message,client)
+    }
+    else if(message.content.toLowerCase()==="!cat"){
+        client.commands.get('cat').execute(message,client)
+    }
+    else if(message.content.toLowerCase()==="!dadjoke"){
+        client.commands.get('dadjoke').execute(message,client)
+    }
+    else if(message.content.toLowerCase()==="!dankmeme"){
+        client.commands.get('dankmeme').execute(message,client)
     }
 });
 

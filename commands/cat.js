@@ -1,9 +1,9 @@
 
 const redditFetch = require('reddit-fetch/src/redditFetch');
 module.exports= {
-name: "meme",
-description:"meme command",
-async execute(message,client){
+name: "cat",
+description:"cat command",
+async execute(client,message){
     fetch();
     async function fetch(){
     redditFetch({
