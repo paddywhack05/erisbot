@@ -3,7 +3,7 @@ const redditFetch = require('reddit-fetch/src/redditFetch');
 module.exports= {
 name: "cat",
 description:"cat command",
-async execute(client,message){
+async execute(message,client){
     fetch();
     async function fetch(){
     redditFetch({
