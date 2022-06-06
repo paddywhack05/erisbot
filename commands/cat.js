@@ -33,7 +33,7 @@ async execute(message,client){
             footer:{text:`💬 ${post.num_comments} 👍 ${post.ups} 👎 ${final}`},
             image:{url:`${post.url}`},
             thumbnail:{url:post.thumbnail},
-            author : {icon_url:message.author.dynamicAvatarURL() , name: `${message.author.username}`}
+            author : {icon_url:message.author.dynamicAvatarURL() , name: `${message.author.username}#${message.author.discriminator}`}
             }
             client.createMessage(message.channel.id,{ embed:embed});
      

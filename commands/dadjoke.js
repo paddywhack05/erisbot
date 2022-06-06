@@ -25,7 +25,7 @@ module.exports= {
                     timestamp: new Date(),
                     color : 0xFF0000,
                     footer:{text:`paddycrack.com  icanhazdadjoke.com`},
-                    author : {icon_url:message.author.dynamicAvatarURL() , name: `${message.author.username}`}
+                    author : {icon_url:message.author.dynamicAvatarURL() , name: `${message.author.username}#${message.author.discriminator}`}
                     }
                     client.createMessage(message.channel.id,{embed:embed})
             }
